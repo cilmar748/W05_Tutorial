@@ -8,4 +8,9 @@ class BonusIndependenceTest {
     }
 
     // Add an independence test here.
+    @Test void bChangesDecision() {
+    assertTrue(bonus("2H 3H 4H 5H 6H"));
+    assertFalse(bonus("2C 3D 4H 5S 6C"));
+    }
+
 }
