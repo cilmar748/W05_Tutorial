@@ -13,5 +13,9 @@ class BonusIndependenceTest {
     assertFalse(bonus("2C 5D 8H JS KC"));
     assertTrue(bonus("7C 7D 7H 9S 9C"));
 }
+    @Test void bChangesDecision() {
+    assertTrue(bonus("2H 3H 4H 5H 6H"));
+    assertFalse(bonus("2C 3D 4H 5S 6C"));
+    }
 
 }
